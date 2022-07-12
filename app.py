@@ -184,7 +184,7 @@ def app():
         
         ''')
     
-    webrtc_streamer(key="demo1",video_processor_factory=VideoTransformer,media_stream_constraints={"video": True, "audio": False})
+    webrtc_streamer(key="app",video_processor_factory=VideoTransformer,media_stream_constraints={"video": True, "audio": False})
 
 def main():
    
@@ -244,8 +244,7 @@ This app is to detect ****Computer Vision Syndrome (CVS)**** in a person by exam
                              		<br></br>"""
 
         st.markdown(html_temp4, unsafe_allow_html=True)
-        webrtc_streamer(key="demo",video_processor_factory=VideoTransformer,rtc_configuration=RTC_CONFIGURATION,media_stream_constraints={"video": True, "audio": False})
-
+        
 
     elif choice == "About":
         about()
