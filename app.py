@@ -11,7 +11,7 @@ import mediapipe as mp
 import numpy as np
 from cvzone.FaceMeshModule import FaceMeshDetector
 from keras.utils import img_to_array     
-RTC_CONFIGURATION = RTCConfiguration({"iceServers": [{"urls": ["stun4.l.google.com:19302"]}]})
+RTC_CONFIGURATION = RTCConfiguration({"iceServers": [{"urls": ["stun:stun.l.google.com:19302"]}]})
 idlist =[22,23,24,26,110,157,158,159,160,161,130,243]
 ratioList = []
 
