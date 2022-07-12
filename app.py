@@ -18,7 +18,7 @@ ratioList = []
 blinkCounter = 0
 counter = 0
 t = datetime.now()  
-class VideoTransformer(VideoTransformerBase):
+class VideoTransformer(VideoProcessorBase):
       
 
     
