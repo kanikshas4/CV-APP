@@ -129,23 +129,7 @@ class VideoTransformer(VideoTransformerBase):
 
         frame= frame/np.max(frame)
 
-        def isbrightF():
-            if np.mean(frame) > thresh:
-                text = "bright"
-                cv2.putText(frame, "{}".format(text), (30, 200), cv2.FONT_HERSHEY_SIMPLEX, 0.8, (0, 0, 255), 2)
         
-                color=(0,128,0)
-                stroke=2
-                start_point = (10, 10)
-                end_point = (1250, 650)
-        
-                cv2.rectangle(frame,start_point,end_point,color,stroke)
-        
-            else:
-                text= "dark,increase the light of the room"
-                cv2.putText(frame, "{}".format(text), (30, 200), cv2.FONT_HERSHEY_SIMPLEX, 0.8, (0, 0, 255), 2)
-        
-        isbrightF()
         
 
         # cv2.imshow('frame',frame)       
